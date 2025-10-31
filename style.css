@@ -711,7 +711,30 @@
      padding: 0 3rem;
  }
 
+ /* BLUR EFFECT ANIMAION */
 
+ .autoBlur {
+     animation: autoBlurAnimation linear both;
+     animation-timeline: view();
+
+ }
+
+ @keyframes autoBlurAnimation {
+     0% {
+         filter: blur(40px);
+     }
+
+     35%,
+     65% {
+         filter: blur(0);
+         opacity: 1;
+     }
+
+     100% {
+         filter: blur(40px);
+         opacity: 0;
+     }
+ }
 
 
 
