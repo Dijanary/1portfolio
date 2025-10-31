@@ -22,3 +22,17 @@ videoList.forEach(function (video) {
         hoverSign.classList.remove("active")
     })
 })
+
+
+
+// Sidebar elements //
+menu.addEventListener("click", function () {
+    sideBar.classList.remove("close-sidebar")
+    sideBar.classList.add("open-sidebar")
+});
+
+closeIcon.addEventListener("click", function () {
+    sideBar.classList.remove("open-sidebar");
+    sideBar.classList.add("close-sidebar");
+
+})
