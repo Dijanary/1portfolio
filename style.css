@@ -736,6 +736,31 @@
      }
  }
 
+ /* AUTO DISPLAY ANIMAION */
+ .autoDisplay {
+     animation: autoDisplayAnimation both;
+     animation-timeline: view();
+
+ }
+
+ @keyframes autoDisplayAnimation {
+     from {
+         filter: blur(10px);
+         transform: translateY(-200px) scale(0);
+     }
+
+     50% {
+         opacity: 1;
+         filter: blur(0px);
+         transform: translateX(0) scale(1);
+     }
+ }
+
+
+
+
+
+
 
 
 
